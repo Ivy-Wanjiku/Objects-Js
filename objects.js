@@ -15,11 +15,13 @@ const products=[
     {name:'Headphones',price:80,category:'Electronics'},
     {name:'Shoes',price:60,category:'Clothing'}
 ];
-const groupByCategory=Object.groupBy(products,product =>{
- return product.category;
-});
+function Categorygroup(products){
+const groupByCategory=Object.groupBy(products,product =>product.category)
+ return groupByCategory
 
-console.log(groupByCategory);
+}
+
+console.log(Categorygroup(products));
 const students = [
     {name:"John",scores:[90,80,85]},
     {name:"Jane",scores:[95,92,88]},
